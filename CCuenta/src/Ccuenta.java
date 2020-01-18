@@ -34,7 +34,12 @@ public class Ccuenta {
 		saldo = saldo - cantidad;
 	}
 
-	// MÃ©todo que me devuelve el nÃºmero de cuenta
+	// Método que me devuelve el nombre del titular
+	public String getNombre() {
+		return nombre;
+	}
+
+	// Método que me devuelve el número de cuenta
 	public String getCuenta() {
 		return cuenta;
 	}
