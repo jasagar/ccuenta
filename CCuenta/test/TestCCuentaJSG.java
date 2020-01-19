@@ -5,17 +5,17 @@ import org.junit.Test;
 public class TestCCuentaJSG {
 
 	@Test
-	public void testCcuenta() {
+	public void testCcuentaJSG() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testIngresar() {
+	public void testIngresarJSG() {
 		fail("Not yet implemented");
 	}
 
 	@Test
-	public void testRetirar() {
+	public void testRetirarJSG() {
 		fail("Not yet implemented");
 	}
 
