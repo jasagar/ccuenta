@@ -24,10 +24,14 @@ public class TestCCuentaJSG {
 		assertEquals(sal, saldo);
 	}
 
-
 	@Test
 	public void testIngresarJSG() {
-		fail("Not yet implemented");
+		Ccuenta cuentaTest = new Ccuenta("Antonio","ES25-3006-6666-1115-8888",5000.0,5);
+		double ingreso = 600.0;
+		Double sal = 5600.0;
+		cuentaTest.ingresar(ingreso);
+		Double saldo = cuentaTest.getSaldo();
+		assertEquals(sal, saldo);
 	}
 
 	@Test
