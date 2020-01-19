@@ -46,7 +46,22 @@ public class TestCCuentaJSG {
 
 	@Test
 	public void testRetirarJSG() {
-		fail("Not yet implemented");
+		Ccuenta cuentaTest = new Ccuenta("Antonio","ES25-3006-6666-1115-8888",5000.0,5);
+		double cargo = 1000.0;
+		Double sal = 4000.0;
+		cuentaTest.retirar(cargo);
+		Double saldo = cuentaTest.getSaldo();
+		assertEquals(sal, saldo);
+	}
+
+	@Test
+	public void testGranRetiradaJSG() {
+		Ccuenta cuentaTest = new Ccuenta("Antonio","ES25-3006-6666-1115-8888",5000.0,5);
+		double cargo = 6000.0;
+		Double sal = -1000.0;
+		cuentaTest.retirar(cargo);
+		Double saldo = cuentaTest.getSaldo();
+		assertEquals(sal, saldo);
 	}
 
 }
